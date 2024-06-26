@@ -10,10 +10,9 @@
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
 
-<form action="https://eliesaab2024--sandbox.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00D0Q0000000eLs" method="POST">
+<form action="https://eliesaab2024--uat.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00D1X0000008eB7" method="POST">
 
-<input type=hidden name="orgid" value="00D0Q0000000eLs">
-<input type=hidden name="retURL" value="http://www.eliesaab.com/pages/contact-us">
+<input type=hidden name="orgid" value="00D1X0000008eB7">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -23,15 +22,25 @@
 <!--  value="diana.arab@eit-mena.com">                                        -->
 <!--  ----------------------------------------------------------------------  -->
 
-Customer Name:<input  id="00N0Q000002G22w" maxlength="50" name="00N0Q000002G22w" size="20" type="text" /><br>
+Customer Name:<input  id="00N1X00000dZ8Cc" maxlength="50" name="00N1X00000dZ8Cc" size="20" type="text" /><br>
 
-Customer Phone:<input  id="00N0Q000002G22r" maxlength="40" name="00N0Q000002G22r" onkeydown="formatPhoneOnEnter(this, event);" size="20" type="text" /><br>
+Customer Email:<input  id="00N1X00000dZ8Cb" maxlength="80" name="00N1X00000dZ8Cb" size="20" type="text" /><br>
 
-Customer Email:<input  id="00N0Q000002G22h" maxlength="80" name="00N0Q000002G22h" size="20" type="text" /><br>
+Customer Phone:<input  id="00N1X00000dZ8Ce" maxlength="40" name="00N1X00000dZ8Ce" size="20" type="text" /><br>
 
-Boutique City:<input  id="00N0Q000002Fx1e" maxlength="255" name="00N0Q000002Fx1e" size="20" type="text" /><br>
+Location:<select  id="00N1X00000dZ8Cg" name="00N1X00000dZ8Cg" title="Location"><option value="">--None--</option><option value="Beirut">Beirut</option>
+<option value="Dubai">Dubai</option>
+<option value="Paris, George V">Paris, George V</option>
+<option value="Paris, Rond Point">Paris, Rond Point</option>
+<option value="New York">New York</option>
+<option value="London">London</option>
+<option value="Milano">Milano</option>
+<option value="Abu Dhabi">Abu Dhabi</option>
+<option value="Riyadh">Riyadh</option>
+<option value="Monaco">Monaco</option>
+</select><br>
 
-Country:<select  id="00N0Q000002FwuE" name="00N0Q000002FwuE" title="Country"><option value="">--None--</option><option value="Afghanistan +93">Afghanistan +93</option>
+Country:<select  id="00N1X00000dZ8CZ" name="00N1X00000dZ8CZ" title="Country"><option value="">--None--</option><option value="Afghanistan +93">Afghanistan +93</option>
 <option value="Albania +355">Albania +355</option>
 <option value="Algeria +213">Algeria +213</option>
 <option value="American Samoa  +1-684">American Samoa  +1-684</option>
@@ -286,21 +295,13 @@ Country:<select  id="00N0Q000002FwuE" name="00N0Q000002FwuE" title="Country"><op
 <option value="Zanzibar  +255">Zanzibar  +255</option>
 <option value="Zimbabwe  +263">Zimbabwe  +263</option>
 </select><br>
-
-Subject:<select  id="00N0Q000002Fx1A" name="00N0Q000002Fx1A" title="Subject"><option value="">--None--</option><option value="Fragrances">Fragrances</option>
-<option value="Customer Care">Customer Care</option>
-<option value="Private Viewing">Private Viewing</option>
-<option value="Boutique Support">Boutique Support</option>
-<option value="Information Request">Information Request</option>
-<option value="Feedback Submission">Feedback Submission</option>
-<option value="Order Returns">Order Returns</option>
-<option value="Other">Other</option>
-</select><br>
+  
+<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
 
 <label for="description">Description</label><textarea name="description"></textarea><br>
 
-<input type=hidden id="recordType" name="recordType" value="0120Q000000DpuT">
-
+<input type=hidden id="recordType" name="recordType" value="0121X0000067odg">
+<input type=hidden name="status" value="New">
 <input type="submit" name="submit">
 
 </form>
