@@ -10,11 +10,12 @@
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
 
-<form action="https://eliesaab2024--sandbox.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00D0Q0000000eLs" method="POST">
+<form action="https://eliesaab2024--uat.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00D1X0000008eB7" method="POST">
 
-<input type=hidden name="orgid" value="00D0Q0000000eLs">
-<input type=hidden name="recordType" value="0120Q000000DpuOQAS">
-<input type=hidden name="retURL" value="http://www.eliesaab.com/pages/contact-us">
+<input type=hidden name="orgid" value="00D1X0000008eB7">
+<input type=hidden name="recordType" value="0121X0000067odf">
+<input type=hidden name="status" value="New">
+<input type=hidden name="subject" value="Appointment">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -24,9 +25,13 @@
 <!--  value="diana.arab@eit-mena.com">                                        -->
 <!--  ----------------------------------------------------------------------  -->
 
-Customer Name:<input  id="00N0Q000002G22w" maxlength="50" name="00N0Q000002G22w" size="20" type="text" /><br>
+<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
 
-Location:<select  id="00N0Q000002FwuT" name="00N0Q000002FwuT" title="Location"><option value="">--None--</option><option value="Beirut">Beirut</option>
+<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+Location:<select  id="00N1X00000dZ8Cg" name="00N1X00000dZ8Cg" title="Location"><option value="">--None--</option><option value="Beirut">Beirut</option>
 <option value="Dubai">Dubai</option>
 <option value="Paris, George V">Paris, George V</option>
 <option value="Paris, Rond Point">Paris, Rond Point</option>
@@ -38,15 +43,18 @@ Location:<select  id="00N0Q000002FwuT" name="00N0Q000002FwuT" title="Location"><
 <option value="Monaco">Monaco</option>
 </select><br>
 
-Customer Phone:<input  id="00N0Q000002G22r" maxlength="40" name="00N0Q000002G22r" onkeydown="formatPhoneOnEnter(this, event);" size="20" type="text" /><br>
+Appointment Type:<select  id="00N1X00000dZ8CU" name="00N1X00000dZ8CU" title="Appointment Type"><option value="">--None--</option><option value="Online Appointment">Online Appointment</option>
+<option value="In-Boutique">In-Boutique</option>
+</select><br>
 
-Customer Email:<input  id="00N0Q000002G22h" maxlength="80" name="00N0Q000002G22h" size="20" type="text" /><br>
-
-Boutique City:<input  id="00N0Q000002Fx1e" maxlength="255" name="00N0Q000002Fx1e" size="20" type="text" /><br>
-
-<label for="type">Type</label><select  id="type" name="type"><option value="">--None--</option>
+<label for="type">Type</label><select  id="type" name="type">
 <option value="Online Appointment">Online Appointment</option>
 <option value="In-Boutique">In-Boutique</option>
+</select><br>
+
+Business Line:<select  id="00N1X00000dZ8CX" name="00N1X00000dZ8CX" title="Business Line"><option value="">--None--</option><option value="Bridal">Bridal</option>
+<option value="Haute Couture">Haute Couture</option>
+<option value="Ready To Wear">Ready To Wear</option>
 </select><br>
 
 <input type="submit" name="submit">
